@@ -1,0 +1,33 @@
+
+.cart-table {
+    width: 100%;
+
+    thead {
+        tr {
+            th {
+                text-align: left;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+
+                img {
+                    max-width: 5rem;
+                    margin: 0 1.5rem 0 0;
+                }
+
+                &:last-child {
+                    width: 6.8rem;
+                }
+            }
+        }
+    }
+
+    &__product {
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,39 @@
+
+.sidebar__menu {
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            &.selected {
+                &>a {
+                    background: blue;
+                    color: white;
+                }
+            }
+
+            a {
+                display: block;
+                position: relative;
+                cursor: pointer;
+                font-size: 1.4rem;
+                color: #444;
+                padding: 1.5rem 1rem;
+                font-weight: 600;
+                transition: 0.3s;
+                border-radius: 0.6rem;
+                text-decoration: none;
+                white-space: nowrap;
+
+                &:hover {
+                    color:blue;
+                }
+            }        
+        }
+    }
+}

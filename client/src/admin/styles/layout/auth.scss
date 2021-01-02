@@ -1,0 +1,25 @@
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+
+    &__info {
+        padding: 2.5rem 0;
+        font-size: 1.4rem;
+        color: #888ea8;
+    }
+}
+
+.box {
+    &--auth {
+        max-width: 50rem;
+        margin: 0 auto;
+
+        @media (min-width: 550px) {
+            padding: 4.4rem;
+        }
+    }
+}

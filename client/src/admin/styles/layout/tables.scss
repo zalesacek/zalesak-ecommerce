@@ -1,0 +1,137 @@
+
+.table-grid {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #222;
+    font-size: 1.4rem;
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__actions {
+        width: 3.2rem;
+        text-align: right;
+    }   
+
+    thead {
+        border-top: 0.1rem solid #ccc;
+        tr {
+            border-bottom: 0.1rem solid #ccc;
+        
+            th {
+                color: blue;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.2rem;
+                text-align: left;
+                line-height: 1.1;
+                padding: 1rem 0.7rem;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 0.1rem solid #ccc;
+            transition: all 0.1s ease;
+            
+            &:hover {
+                transform: translateY(-1px) scale(1.01);
+            }
+
+            td {
+                padding: 1rem 0.7rem;
+                color: #222;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.table-grid-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+    &__image {
+        width: 4.5rem;
+        height: 4.5rem;
+        position: relative;
+
+        img {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__content {
+        width: calc(100% - 4.5rem);
+        padding: 0 0 0 1.5rem;
+    }
+        &__title {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0.3rem 0;
+        }
+}
+
+
+.actions {
+    position: relative;
+
+    &__icon {
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin: 0 0 0 1rem;
+        outline: none !important;
+        cursor: pointer;
+        filter: invert(60%) sepia(18%) saturate(392%) hue-rotate(191deg) brightness(91%) contrast(87%);
+    }
+
+    &__window {
+        position: absolute;
+        top:0;
+        right:-1rem;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: 0.3s;
+        background: black;
+        border: 0.1rem solid black;
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 0.5rem;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                padding: 0.4rem 0;
+                white-space: nowrap;
+            }
+        }
+    }
+}

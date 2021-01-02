@@ -1,0 +1,26 @@
+@use '../abstract/colors';
+
+.footer {
+    background: #f1f1f1;
+
+    .copyright {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1.5rem 0;
+
+        a {
+            color:#666;
+            text-decoration: none;
+
+            span {
+                display: inline-block;
+                margin: 0 0.2rem;
+            }
+
+            &:hover {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+    }
+}
